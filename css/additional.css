@@ -1,0 +1,13 @@
+.reveal img,
+.reveal ul
+{
+    vertical-align: top;
+}
+.reveal small {
+    vertical-align: baseline;
+}
+div.floater {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
