@@ -134,9 +134,9 @@ VirtualDocumentRoot /var/www/vhosts/%-4.0/public_html
         </section>
 
         <section>
-            <section>
+            <section data-background="images/code-review-back.jpg">
                 <h3>Code-review и unit-тестирование</h3>
-                <img src="images/code-review.jpg" alt=""/>
+                <img src="images/code-review.png" alt=""/>
                 <aside class="notes">
                     Для того, чтобы поддерживать код в хорошем состоянии, мы практикуем code-review и unit-тесты. Что дает
                     код ревью? На самом деле это очень важный момент. Эта методика позволяет отловить неочевидные баги и
@@ -150,6 +150,17 @@ VirtualDocumentRoot /var/www/vhosts/%-4.0/public_html
 
         <section>
             <h3>Ручные тесты и автотестирование</h3>
+            <ul>
+                <li>Быстрое ручное тестирование нового кода</li>
+                <li>Функциональное автоматизированное тестирование</li>
+                <li>Три этапа тестирования:
+                    <ul>
+                        <li>отдельно</li>
+                        <li>в составе релиза</li>
+                        <li>на production</li>
+                    </ul>
+                </li>
+            </ul>
             <aside class="notes">
                 Кроме Unit-тестирования у нас есть QA отдел, отвечающий за функциональное тестирование системы. Все
                 задачи так или иначе проходят через QA, понимая это разработчик всегда должен предоставить список
