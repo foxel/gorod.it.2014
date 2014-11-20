@@ -131,6 +131,22 @@
                 </aside>
             </section>
             <section>
+                <h3>Развертывание и свертывание</h3>
+                <ul>
+                    <li class="fragment" data-fragment-index="0"><span class="fragment fade-out" data-fragment-index="7">База данных</span></li>
+                    <li class="fragment" data-fragment-index="1"><span class="fragment fade-out" data-fragment-index="6">Файлы</span></li>
+                    <li class="fragment" data-fragment-index="2"><span class="fragment fade-out" data-fragment-index="5">Код</span></li>
+                    <li class="fragment" data-fragment-index="3"><span class="fragment fade-out" data-fragment-index="4">Сервисы окружения</span></li>
+                </ul>
+                <aside class="notes">
+                    Как только gitolite получает изменения в ветку, он посредством API запускает Jenkins задачу
+                    развертывания тестового окружения. Процесс включает копирование кода из репозитория, развертывание
+                    базы, подготовку папок, поднятие нужных сопуствующих сервисов.
+                    Как только gitolite обнаружит удаление ветки, запускается процесс свертывания окружения, при котором
+                    производятся обратные дейтсвия: опускаются сервисы, стирается код, удаляются копии базы данных.
+                </aside>
+            </section>
+            <section>
                 <h3>А для apache это просто:</h3>
                 <pre><code data-trim="true" class="hlapache apache">
 ## ticket1214.test.project.com
