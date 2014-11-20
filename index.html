@@ -35,16 +35,41 @@
         </section>
 
         <section>
-            <h3>Bitworks</h3>
-            <aside class="notes">
+            <section>
+                <h3>Bitworks Software</h3>
+                <p>Основана в 2005 году в Томске</p>
+                <p>В штате более 50 сотрудников</p>
+                <img src="images/bitworks.png" />
+                <aside class="notes">
 
-            </aside>
+                </aside>
+            </section>
+            <section>
+            <h4>Направления:</h4>
+            <ul>
+                <li>Высокопроизводительные системы высокой доступности</li>
+                <li>Контентные проекты</li>
+                <li>Data mining</li>
+                <li>ЦОД и облачные услуги (NetPoint)
+                    <ul>
+                        <li>Dedicated/VPS/Hosting</li>
+                        <li>Хранение и обработка данных</li>
+                        <li>Системное администрирование</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
         </section>
 
         <section>
             <section>
-                <h3>Инструменты, инфраструктура</h3>
-                <img src="" />
+                <h3>Инструменты разработки</h3>
+                <p>Наш минимальный набор:</p>
+                <ul>
+                    <li>Continuous integration система (Jenkins)</li>
+                    <li>VCS (git + gitolite)</li>
+                    <li>Project management система (redmine)</li>
+                </ul>
                 <aside class="notes">
                     Для управления процессом мы используем небольшой набор инструментов, я бы даже сказал минимальный.
                     Для управления кодом мы используем гит. Он прост в освоении и практически является стандартом для
@@ -55,11 +80,7 @@
             </section>
             <section>
                 <h4>***</h4>
-                <ul>
-                    <li>Continuous integration система (Jenkins)</li>
-                    <li>VCS (git + gitolite)</li>
-                    <li>Project management система (redmine)</li>
-                </ul>
+                <img src="images/infrastructure.png"/>
             </section>
         </section>
         <section>
@@ -106,7 +127,7 @@
         <section>
             <section>
                 <h3>Тысяча и одно окружение</h3>
-                <img src="" />
+                <img src="images/TestServer_Tickets.png" />
                 <aside class="notes">
                     Наиболее интересная, на мой взгляд, фича нашего подхода - маленькие тестовые окружения для каждой
                     ветки. Они создаются автоматически, в тот момент когда gitolite получает обновление в репозиторий.
